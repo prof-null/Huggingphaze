@@ -30,7 +30,7 @@ Huggingphaze automatically:
 
 Click below to open in a cloud notebook environment:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/huggingphaze/blob/main/notebooks/huggingphaze_notebook.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prof-null/huggingphaze/blob/main/notebooks/huggingphaze_notebook.ipynb)
 
 > Replace `YOUR_USERNAME` with your GitHub username.
 
