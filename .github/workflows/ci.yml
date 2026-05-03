@@ -10,6 +10,8 @@ jobs:
 
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
 
     steps:
       - name: Checkout repository
