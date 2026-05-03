@@ -21,7 +21,21 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
 
       - name: Verify environment
-        run: python -c "import pandas, yaml, requests; print('OK')"
+        run: |
+          python -c "import pandas, yaml, requests, nbformat; print('Environment OK')"
+
+      - name: Generate notebook
+        run: |
+          python generate_notebook.py
+
+      - name: Commit generated notebook
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add notebooks/
+          git commit -m "Auto-generated notebook update" || echo "No changes to commit"
+          git push
